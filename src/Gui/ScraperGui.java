@@ -40,7 +40,7 @@ import javax.swing.ImageIcon;
 import java.awt.Dialog;
 import java.awt.Window;
 import java.awt.Window.Type;
-import net.miginfocom.swing.MigLayout;
+//import net.miginfocom.swing.MigLayout;
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.ScrollPaneConstants;
