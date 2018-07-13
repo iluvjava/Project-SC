@@ -137,7 +137,7 @@ public class Scraper
 		
 		for(Scrapable s :nextscrapables)
 		{
-			s.createSynapse();
+			s.prepare();
 			s.doTheScraping(downloader);
 		}
 		

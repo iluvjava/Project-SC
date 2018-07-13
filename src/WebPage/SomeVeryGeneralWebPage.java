@@ -71,19 +71,24 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 	
 	
 	@Override
-	public Scrapable createSynapse() {
+	public Scrapable prepare() 
+	{
+		
+		
 		return null;
 	}
 
 	@Override
-	public Collection<Scrapable> getNextWebPages() throws IOException {
+	public Collection<Scrapable> getNextWebPages() throws IOException 
+	{
 		return null;
 	}
 
 	
 
 	@Override
-	public String getSourceContentUrl() {
+	public String getSourceContentUrl() 
+	{
 		return null;
 	}
 	

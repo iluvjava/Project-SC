@@ -63,11 +63,13 @@ public class DownLoader
 	 
 	 protected void finalize()
 	 {
-//		 try {
-//			this.runningDownloading.join();
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
+		 try 
+		{
+			this.runningDownloading.join();
+		} catch (InterruptedException e) 
+		{
+			e.printStackTrace();
+		}
 		 
 	 }
 	
@@ -153,7 +155,6 @@ public class DownLoader
 				int loopcount=0;
 				while((temp = is.read())!=-1)
 				{
-					
 					bos.write(temp);
 					loopcount++;
 				}

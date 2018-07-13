@@ -265,7 +265,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	 * The instance of this object. 
 	 * 
 	 */
-	public Scrapable createSynapse() 
+	public Scrapable prepare() 
 	{
 		println("Creating synapses: ");
 		for(String s : this.getMoreDA())
@@ -367,7 +367,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		if(this.G_moreAD==null)
 			this.G_moreAD = new HashSet<Scrapable>();
 		
-		this.createSynapse();
+		this.prepare();
 		this.reachoutToNextWebs_helper();
 		return this.G_moreAD;
 	}

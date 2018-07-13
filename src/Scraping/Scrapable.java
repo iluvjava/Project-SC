@@ -53,7 +53,7 @@ public interface Scrapable
 	 * 
 	 * @throws IOException
 	 */
-	 Scrapable createSynapse();
+	 Scrapable prepare();
 	
 	
 	/**

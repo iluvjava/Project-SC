@@ -42,7 +42,7 @@ public class TestEveything {
 		println(sp);
 		println("The web is loaded and we are going to create synapses;");
 		println("------------here are all the links we got: ");
-		sp.createSynapse();
+		sp.prepare();
 		println("\n\n\n-------------------We are going to instantiate all the objects-----------\n\n");
 		Collection<Scrapable> allwebs = ((Scrapable)sp).getNextWebPages();
 		for(Object o : allwebs)println(allwebs);

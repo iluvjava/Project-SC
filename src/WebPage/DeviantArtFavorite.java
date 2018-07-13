@@ -56,7 +56,7 @@ public class DeviantArtFavorite implements Scrapable
 	}
 
 	@Override
-	public Scrapable createSynapse() 
+	public Scrapable prepare() 
 	{
 		Scrapable.G_alreadyVistedURL.addAll(all_thumb_link);
 		return this;
