@@ -11,6 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import Gui.GuiModel;
 import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
@@ -22,7 +23,11 @@ import Scraping.Scraper;
  * Learn about html
  * </a>
  * <br>
- * This web page will not recurse like deviant art, its functionalities on that is disabled. 
+ * This web page will not recurse like deviant art, its functionalities on that is disabled. <br>
+ * 
+ * <p><b>This class do the following:</b></p><br>
+ * 
+ * 
  * 
  * @author victo
  */
@@ -36,10 +41,14 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 	
 	public SomeVeryGeneralWebPage(String link) throws IOException 
 	{
+		
 		super(link);
 		this.loadPage();
-		this.extractURL();
+		println("");
 	}
+	
+	
+	
 
 	
 	/**
@@ -78,13 +87,7 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 		return null;
 	}
 	
-	public static void println(Object o)
-	{
-		System.out.println(o.toString());
-		Gui.GuiModel.println(o);
-	}
-
-
+	
 	@Override
 	public boolean pauseAndSkip() 
 	{
@@ -94,10 +97,35 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 
 
 	@Override
-	public void doTheScraping(DownLoader dl) {
-		// TODO Auto-generated method stub
+	public void doTheScraping(DownLoader dl) 
+	{
+		
 		
 	}
 	
+	
+	public static void print(Object o)
+	{
+		System.out.println(o);
+		GuiModel.print(o);
+	}
+	
+	public static void println(Object o)
+	{
+		System.out.println(o);
+		GuiModel.println(o);
+	}
+	
+	
+	/**
+	 * Return an instance of this class. 
+	 * @param URL
+	 * @return
+	 * null if we can not create such an instance. 
+	 */
+	public static Scrapable getInstance(String URL)
+	{
+		return null; 
+	}
 
 }

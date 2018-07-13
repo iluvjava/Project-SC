@@ -139,6 +139,9 @@ public class GuiModel
 		println("Setting the URL: "+ this.initiallink);
      	println("This is some sort of a deviant art link. ");
 		Scrapable scrapable = DeviantArtBuilder.getInstance(this.initiallink);
+		
+		
+		
 		if(scrapable == null)
 		{
 			println("Cannot Recognize url.");return false;
