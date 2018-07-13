@@ -29,35 +29,35 @@ public abstract class HtmlPage implements WebPage
 {
 	
 	// we can create a page with a referred http
-	public String G_referedLink;
+	public String referedLink;
 	
 	// the cookies for connecting to this page. 
-	protected Map<String,String> G_cookiesforupload;
+	protected Map<String,String> cookiesforupload;
 	
-	protected boolean G_ignorecontenttype = true;
+	protected boolean ignorecontenttype = true;
 	
-	protected boolean G_redirect = false; 
+	protected boolean redirect = false; 
 	
 	
 	//**********************************
 	
-	protected Document G_ThispageContent;	
+	protected Document thispagecontent;	
 	
-	protected Response G_response;
+	protected Response response;
 	
-	protected String G_ThisPageURL;
+	protected String thispageURL;
 	
-	protected Connection G_thispageconnection;
+	protected Connection thispageconnection;
 	
-	protected Map<String,String> G_cookies;
+	protected Map<String,String> cookies;
 	
-	protected int G_timeout = 10000;
+	protected int timeout = 10000;
 	
-	protected Request G_thispagerequest;
+	protected Request thispagerequest;
 	
 	//**********************************************
 	
-	private boolean G_haveloaded = false; 
+	private boolean haveloaded = false; 
 	
 	
 	
@@ -70,7 +70,7 @@ public abstract class HtmlPage implements WebPage
 	 */
 	public HtmlPage(String link)
 	{
-		this.G_ThisPageURL = link; 
+		this.thispageURL = link; 
 	}
 	
 	/**
@@ -80,33 +80,35 @@ public abstract class HtmlPage implements WebPage
 	 */
 	public WebPage loadPage() throws IOException
 	{
-		Connection con = Jsoup.connect(this.G_ThisPageURL);
+		Connection con = Jsoup.connect(this.thispageURL);
 		
-		this.G_thispageconnection = con; 
+		this.thispageconnection = con; 
 		
 		con.userAgent(WebPage.GetUserAgent());
-		con.timeout(G_timeout);
-		con.ignoreContentType(G_ignorecontenttype);
-		con.followRedirects(G_redirect);
+		con.timeout(timeout);
+		con.ignoreContentType(ignorecontenttype);
+		con.followRedirects(redirect);
 		
-		if(this.G_cookiesforupload!=null)
+		if(this.cookiesforupload!=null)
 		{
-			con.cookies(this.G_cookiesforupload);
+			con.cookies(this.cookiesforupload);
 		}
-		if(this.G_referedLink!=null)
+		if(this.referedLink!=null)
 		{
-			con.referrer(G_referedLink);
+			con.referrer(referedLink);
 		}
 		
 		
 		
-		this.G_response = con.execute();
-		this.G_thispagerequest = con.request();
-		this.G_ThispageContent = this.G_response.parse();
+		this.response = con.execute();
 		
-		this.G_cookies = this.G_response.cookies();
+		this.thispagerequest = con.request();
 		
-		this.G_haveloaded = true; 
+		this.thispagecontent = this.response.parse();
+		
+		this.cookies = this.response.cookies();
+		
+		this.haveloaded = true; 
 		
 		
 		return this;
@@ -114,40 +116,40 @@ public abstract class HtmlPage implements WebPage
 
 	public Document getDoc() {
 		
-		return this.G_ThispageContent;
+		return this.thispagecontent;
 	}
 
 	@Override
 	public Map<String, String> getCookie() {
-		return this.G_cookies;
+		return this.cookies;
 	}
 
 	@Override
 	public Response getResponse() {
-		return this.G_response;
+		return this.response;
 	}
 
 	@Override
 	public Request getRequest() {
-		return this.G_thispagerequest;
+		return this.thispagerequest;
 	}
 	
 	public Connection getConnection()
 	{
-		return this.G_thispageconnection; 
+		return this.thispageconnection; 
 	}
 	
 	public String getThispageLink()
 	{
 		
-		if(this.G_response!=null)return this.G_response.url().toString();
-		return this.G_ThisPageURL;
+		if(this.response!=null)return this.response.url().toString();
+		return this.thispageURL;
 		
 	}
 
 	public WebPage setRedirect(boolean arg)
 	{
-		this.G_redirect = arg;
+		this.redirect = arg;
 		return this;
 	}
 	
@@ -159,7 +161,7 @@ public abstract class HtmlPage implements WebPage
 	 */
 	public WebPage setRedirectCookie(Map<String,String> cookies)
 	{
-		this.G_cookiesforupload = cookies; 
+		this.cookiesforupload = cookies; 
 		return this; 
 	}
 
@@ -173,13 +175,13 @@ public abstract class HtmlPage implements WebPage
 	public WebPage setReferedLink(String referedlink)
 	{
 		if(referedlink == null)return this;
-		this.G_referedLink = referedlink;
+		this.referedLink = referedlink;
 		return this;
 	}
 
 	public WebPage setTimeout(int milisec)
 	{
-		this.G_timeout = milisec; 
+		this.timeout = Math.abs(milisec); 
 		return this; 
 	}
 
@@ -190,26 +192,26 @@ public abstract class HtmlPage implements WebPage
 	 */
 	public WebPage ignorecontentType(boolean arg)
 	{
-		this.G_ignorecontenttype = arg;
+		this.ignorecontenttype = arg;
 		return this;
 	}
 
 	public boolean hasPreviouslyLoaded()
 	{
-		return this.G_haveloaded;
+		return this.haveloaded;
 	}
 
 	public String toString()
 	{
 		String s = "\n----------" + this.getClass()+"-----------\n";
-		s+="This is the url of the page: \""+this.G_ThisPageURL+"\"\n";
-		if(this.G_haveloaded)s+="This page has called and loaded.\n";
-		if(this.G_ignorecontenttype)s+="Ignore Content Type enable.\n";
-		if(this.G_cookies!=null&&!this.G_cookies.isEmpty())s+="This is the page cookies: "+ this.G_cookies.toString()+"\n";
-		if(this.G_cookiesforupload!=null&&!this.G_cookiesforupload.isEmpty())
-			s+= "This is the cookies for upload: "+ this.G_cookiesforupload.toString()+"\n";
-		if(this.G_referedLink!=null)s+="This is the refered link(for upload): "+ this.G_referedLink;
-		if(this.G_haveloaded)s+="This is the respose code: "+ this.G_response.statusCode()+"\n";
+		s+="This is the url of the page: \""+this.thispageURL+"\"\n";
+		if(this.haveloaded)s+="This page has called and loaded.\n";
+		if(this.ignorecontenttype)s+="Ignore Content Type enable.\n";
+		if(this.cookies!=null&&!this.cookies.isEmpty())s+="This is the page cookies: "+ this.cookies.toString()+"\n";
+		if(this.cookiesforupload!=null&&!this.cookiesforupload.isEmpty())
+			s+= "This is the cookies for upload: "+ this.cookiesforupload.toString()+"\n";
+		if(this.referedLink!=null)s+="This is the refered link(for upload): "+ this.referedLink;
+		if(this.haveloaded)s+="This is the respose code: "+ this.response.statusCode()+"\n";
 		return s;
 	}
 	
@@ -220,8 +222,8 @@ public abstract class HtmlPage implements WebPage
 	 * redirected. 
 	 * 
 	 * 
-	 * Conditions for two equaled web pages: 
-	 * 1. If the web pages are loaded, we compare the weblink after redirect.
+	 * Conditions for two equaled web pages: <br>
+	 * 1. If the web pages are loaded, we compare the web link after redirect.<br>
 	 * 2. If any one of the web pages are not loaded yet, we compare the string that 
 	 * used to initaited the web page. 
 	 * @return
@@ -235,15 +237,30 @@ public abstract class HtmlPage implements WebPage
 		HtmlPage p = (HtmlPage) o ; 
 		if(this.hasPreviouslyLoaded() && p.hasPreviouslyLoaded())
 		{
-			return p.G_response.url().toString().equals(this.G_response.url().toString());
+			return p.response.url().toString().equals(this.response.url().toString());
 		}
-		return this.G_ThisPageURL.equals(p.G_ThisPageURL);
+		return this.thispageURL.equals(p.thispageURL);
 	}
 	
 	
 	public List<Element> getElementsByAttri(String attribute)
 	{
 		return this.getDoc().getElementsByAttribute(attribute);
+	}
+	
+	
+	
+	/**
+	 *--- Method carfully Tested --- <br>
+	 * 
+	 * if this page has been loaded, the method will return the tile of the page, if not 
+	 * it will return a the url of this page. 
+	 * @return
+	 */
+	public String getTitle()
+	{
+		if(this.getDoc()!=null)return this.getDoc().getElementsByTag("title").text();
+		return "Title null, webURL: "+this.thispageURL;
 	}
 	
 	

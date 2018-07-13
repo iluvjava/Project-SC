@@ -27,7 +27,10 @@ public class TestEverything {
 		
 //		testinggernalwebpages();
 		
-		testDeviantArtFavorite();
+//		testDeviantArtFavorite();
+		
+		
+		testingGettingTilte();
 	}
 	/**
 	 * testing da basic functionality: 
@@ -94,6 +97,13 @@ public class TestEverything {
 		println(url);
 		println(DeviantArtFavorite.isDomain(url));
 		
+	}
+	
+	
+	public static void testingGettingTilte()
+	{
+		HtmlPage pg = new Page("https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/move");
+		println(pg.getTitle());
 	}
 	
 	

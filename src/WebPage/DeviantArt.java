@@ -40,6 +40,9 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	String G_theimage; // the image link of this page. 
 	private Collection<Scrapable> G_moreAD ;// all the others pages that is one this pages
 	byte[] G_thispageimage;// the image in byte array. 
+	
+	
+	
 	/**
 	 * <p>
 	 * This class will do the following things currently
@@ -218,7 +221,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		wp.setRedirect(true);
 		wp.loadPage();
 		
-		println("Getting the high quality image... status code: "+ wp.getResponse().statusCode());
+		println(this.getTitle()+"---Download status---"+ wp.getResponse().statusCode());
 		
 		//if(wp.getResponse().statusCode()!=200)return null;
 		
@@ -246,7 +249,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			for(Element e : eles)
 			{
 		
-				println("DA link: "+e.baseUri());
+				println("Getting mainimage "+e.baseUri());
 				println("main Img: "+e.attr("abs:src"));
 				return new URL(e.attr("abs:src")).toString();
 			}
@@ -271,10 +274,11 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			if(!Scrapable.G_alreadyVistedURL.contains(s))this.G_nextPages.add(s);
 			
 			Scrapable.G_alreadyVistedURL.add(s); //add anyway because it is a set. 
+			
 			println(s);
 		}
 		//println("All next stage pages are added to the field");
-		println(this.G_nextPages);
+		//println(this.G_nextPages);
 		return this;
 	}
 
@@ -415,7 +419,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		{
 			println("There is a download botton on this deviant art page. ");
 			 downloadlink = eles.get(0).attr("href");
-			 println("Download link: "+ downloadlink);
+			 println("---> "+ downloadlink);
 		}
 		return downloadlink;
 	}

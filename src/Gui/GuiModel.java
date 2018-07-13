@@ -28,6 +28,7 @@ import WebPage.DeviantArtFavorite;
  * <li>Print lines of text to the output window.
  * <li>Handle the event and produce correct output to the 
  * window when user interact with the view.
+ * <li>It will print the content to the sys log. 
  * </ul>
  * 
  * <p>
@@ -97,7 +98,7 @@ public class GuiModel
 		public synchronized void println(Object o)
 		{
 			print(o.toString()+"\n");
-			SystemLog.println(o);
+			
 		}
 		
 		public void setText(String s)
@@ -136,7 +137,7 @@ public class GuiModel
 		println("Setting target: "+this.target);
 
 		println("Setting the URL: "+ this.initiallink);
-     	println("This is a Deviant favorite link....");
+     	println("This is some sort of a deviant art link. ");
 		Scrapable scrapable = DeviantArtBuilder.getInstance(this.initiallink);
 		if(scrapable == null)
 		{
