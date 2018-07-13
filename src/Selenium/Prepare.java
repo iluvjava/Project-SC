@@ -8,6 +8,12 @@ package Selenium;
  */
 public class Prepare 
 {
+	
+	// Ensure the Geko driver is presented. 
+	static 
+	{
+		
+	}
 	public static void pre()
 	{
 		System.setProperty("webdriver.gecko.driver","C:\\SeleniumGecko\\geckodriver.exe");

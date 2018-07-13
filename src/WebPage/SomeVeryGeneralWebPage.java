@@ -21,12 +21,9 @@ import Scraping.Scraper;
  * Learn about html
  * </a>
  * <br>
+ * This web page will not recurse like deviant art, its functionalities on that is disabled. 
  * 
  * @author victo
- * 
- * 
- * 
- *
  */
 public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 
@@ -56,7 +53,6 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 		
 		for(Element e : eles)
 		{
-			
 			println(e.absUrl("href"));
 		}
 		
