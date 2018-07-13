@@ -186,6 +186,7 @@ public class GuiModel
 	public void startExecute() 
 	{
 		this.G_GUI.getBtnStart().setEnabled(false);
+		
 		Thread t =
 				new Thread
 				(

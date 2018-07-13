@@ -11,6 +11,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
 
@@ -70,10 +71,7 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 		return null;
 	}
 
-	@Override
-	public Map<String, InputStream> doTheScraping() throws IOException {
-		return null;
-	}
+	
 
 	@Override
 	public String getSourceContentUrl() {
@@ -91,6 +89,13 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 	public boolean pauseAndSkip() 
 	{
 		return Scraper.Pause;
+		
+	}
+
+
+	@Override
+	public void doTheScraping(DownLoader dl) {
+		// TODO Auto-generated method stub
 		
 	}
 	

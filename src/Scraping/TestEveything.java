@@ -59,7 +59,7 @@ public class TestEveything {
 		
 		File f = new File("E:/");
 		
-		Scrapable.createFileFromScrapable(f, scr);
+		//Scrapable.createFileFromScrapable(f, scr);
 	}
 	
 	

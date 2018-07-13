@@ -35,6 +35,7 @@ public interface Scrapable
 	
 	
 	
+	
 	/**
 	 * Preparing for getting the similiar web sites. 
 	 * 1.
@@ -70,7 +71,7 @@ public interface Scrapable
 	 * Please Don't return null. 
 	 * @throws IOException
 	 */
-	public <T extends InputStream> Map<String,T> doTheScraping()throws IOException;
+	public void doTheScraping(DownLoader dl);
 
 	/**
 	 * This is a method will return the url of the object
@@ -138,60 +139,62 @@ public interface Scrapable
 	 * Illegalargumnet exception is the give file is not a directory. 
 	 * or if the file doesn't exist at all; 
 	 */
-	public static boolean createFileFromScrapable(final File  dir, Scrapable scr)
-	{
-		if(!dir.isDirectory())throw new IllegalArgumentException();
-		if(!dir.exists())throw new IllegalArgumentException();
-		
-		
-			
-			try
-			{
-				for(Entry<String, InputStream> en: scr.doTheScraping().entrySet())
-				{
-					try
-					{
-						InputStream inputstream = en.getValue();
-						String filename = en.getKey();
-						
-						File file = new File(dir.getAbsolutePath()+"\\"+inputstream.hashCode()+filename);
-						if(file.exists())
-						{
-							println("File:"+ file.getAbsolutePath()+" already existed. ");
-							return true;
-						}
-						
-						println("We are trying to create a file for a scrapable under dir:");
-						println(file.getAbsolutePath());
-						
-						BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file));
-						BufferedInputStream is = new BufferedInputStream(inputstream);
-						int temp;
-						int loopcount=0;
-						while((temp = is.read())!=-1)
-						{
-							
-							bos.write(temp);
-							loopcount++;
-						}
-						println("Buffered InputStream byte count: "+ loopcount);
-						is.close();
-						bos.close();
-					}
-					catch(Exception e)
-					{
-						GuiModel.println(e);
-						e.printStackTrace();
-					}
-				}
-			} catch (IOException e) 
-			{
-				e.printStackTrace();
-			}
-		
-		return true;
-		
-	}
+//	public static boolean createFileFromScrapable(final File  dir, Scrapable scr)
+//	{
+//		if(!dir.isDirectory())throw new IllegalArgumentException();
+//		if(!dir.exists())throw new IllegalArgumentException();
+//		
+//		
+//			
+//			try
+//			{
+//				for(Entry<String, InputStream> en: scr.doTheScraping().entrySet())
+//				{
+//					try
+//					{
+//						InputStream inputstream = en.getValue();
+//						String filename = en.getKey();
+//						
+//						File file = new File(dir.getAbsolutePath()+"\\"+inputstream.hashCode()+filename);
+//						if(file.exists())
+//						{
+//							println("File:"+ file.getAbsolutePath()+" already existed. ");
+//							return true;
+//						}
+//						
+//						println("We are trying to create a file for a scrapable under dir:");
+//						println(file.getAbsolutePath());
+//						
+//						BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file));
+//						BufferedInputStream is = new BufferedInputStream(inputstream);
+//						int temp;
+//						int loopcount=0;
+//						while((temp = is.read())!=-1)
+//						{
+//							
+//							bos.write(temp);
+//							loopcount++;
+//						}
+//						println("Buffered InputStream byte count: "+ loopcount);
+//						is.close();
+//						bos.close();
+//					}
+//					catch(Exception e)
+//					{
+//						GuiModel.println(e);
+//						e.printStackTrace();
+//					}
+//				}
+//			}
+//			
+//			catch (IOException e) 
+//			{
+//				e.printStackTrace();
+//			}
+//		
+//		return true;
+//		
+//	}
 	
 	public static void println(Object o )
 	{

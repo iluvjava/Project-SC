@@ -12,9 +12,9 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -23,6 +23,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import Gui.GuiModel;
+import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
 
@@ -39,7 +40,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	private Collection<String> G_nextPages = new TreeSet<String>(); // A string representaion of all the pages that are on this page. 
 	String G_theimage; // the image link of this page. 
 	private Collection<Scrapable> G_moreAD ;// all the others pages that is one this pages
-	byte[] G_thispageimage;// the image in byte array. 
+	byte[] theimgbytearray;// the image in byte array. 
 	
 	
 	
@@ -75,7 +76,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		this.setRedirect(true); //recentely added. 
 		this.loadPage();
 		this.G_theimage = this.getDAMainImag();
-		this.doTheScraping();
 		
 	}
 	
@@ -289,38 +289,58 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	 * can be prepared for downloading the content; 
 	 * @Throw MalformedURLexception.
 	 */
-	public Map<String, InputStream> doTheScraping() throws IOException 
+	public void doTheScraping(DownLoader dl) 
 	{
-		if(this.G_thispageimage!=null)
+		if(this.theimgbytearray!=null)
 		{
 			Map<String, InputStream> result = new HashMap<>();
-			result.put(
+			result.put
+			(
 					Scrapable.getFilenameFromScrapable(this),
-					new ByteArrayInputStream(this.G_thispageimage));
-			return  result;
+					new ByteArrayInputStream(this.theimgbytearray)
+			);
+			
+			for(Entry<String, InputStream> en:result.entrySet())
+			{
+				dl.forwardFile(en.getKey(), en.getValue());
+			}
+			
 		}
 		
 		String sourcelink = this.G_theimage;
 		
-		URL url = new URL(sourcelink);
-		
-		InputStream stream = new BufferedInputStream(url.openStream());
-		
-		ByteArrayOutputStream bis = new ByteArrayOutputStream();
-		
-		for(int temp;(temp = stream.read())!=-1;)
+		try
 		{
-			bis.write(temp);
+		
+			URL url = new URL(sourcelink);
+			
+			InputStream stream = new BufferedInputStream(url.openStream());
+			
+			ByteArrayOutputStream bis = new ByteArrayOutputStream();
+			
+			for(int temp;(temp = stream.read())!=-1;)
+			{
+				bis.write(temp);
+			}
+			stream.close();
+			
+			InputStream result = new ByteArrayInputStream(bis.toByteArray());
+			this.theimgbytearray = bis.toByteArray();
+			bis.close();
+			
+			Map<String,InputStream> listofresult = new HashMap<>();
+			listofresult.put(Scrapable.getFilenameFromScrapable(this),result);
+			
+			for(Entry<String, InputStream> en:listofresult.entrySet())
+			{
+				dl.forwardFile(en.getKey(), en.getValue());
+			}
+		
+		}catch (Exception e) {
+			e.printStackTrace();
+			
 		}
-		stream.close();
 		
-		InputStream result = new ByteArrayInputStream(bis.toByteArray());
-		this.G_thispageimage = bis.toByteArray();
-		bis.close();
-		
-		Map<String,InputStream> listofresult = new HashMap<>();
-		listofresult.put(Scrapable.getFilenameFromScrapable(this),result);
-		return listofresult; 
 	}
 
 	public String toString()

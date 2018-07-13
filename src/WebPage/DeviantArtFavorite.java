@@ -10,6 +10,7 @@ import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 
+import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
 import Selenium.WebDriverBridge;
@@ -68,13 +69,11 @@ public class DeviantArtFavorite implements Scrapable
 	}
 
 	@Override
-	public Map<String,InputStream> doTheScraping() throws IOException 
+	public void doTheScraping(DownLoader dl)
 	{
 		System.out.println("Colsing web Driver.");
 		
 		this.driverAPI.close();
-		
-		
 		
 		Map<String,InputStream> result = new HashMap<>();
 		for(String s : this.all_thumb_link)
@@ -83,7 +82,7 @@ public class DeviantArtFavorite implements Scrapable
 			try
 			{
 				DeviantArt d = new DeviantArt(s);
-				result.putAll(d.doTheScraping());
+				d.doTheScraping(dl);
 			}
 			catch(Error ee)
 			{
@@ -97,7 +96,6 @@ public class DeviantArtFavorite implements Scrapable
 			}
 		}
 		
-		return result;
 	}
 
 	@Override

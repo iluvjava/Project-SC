@@ -36,6 +36,13 @@ public class SystemLog extends OutputStream
 			}
 		
 		raf = getRAF();
+		try {
+			// place pointer at the end of the file. 
+			raf.seek(raf.length());
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		println("SystemLog Initialized.");
 		println("----"+new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date())+"----");
 	}
@@ -57,7 +64,6 @@ public class SystemLog extends OutputStream
 
 	public void write(int arg0) throws IOException 
 	{
-		raf.seek(raf.length());
 		raf.write(arg0);
 	}
 	
@@ -66,9 +72,9 @@ public class SystemLog extends OutputStream
 	
 		try 
 		{
-			raf.seek(raf.length());
 			raf.write(arg0);
-		} catch (IOException e) {
+		} catch (IOException e) 
+		{
 		System.out.print(arg0);
 		}
 	}

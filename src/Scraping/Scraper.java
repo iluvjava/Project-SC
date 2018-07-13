@@ -29,7 +29,11 @@ import Gui.GuiModel;
  */
 public class Scraper
 {
-	protected ConcurrentLinkedQueue<Scrapable> waitingfordonwload;
+	
+	
+	
+	//protected ConcurrentLinkedQueue<Scrapable> waitingfordonwload;
+	private int webs_hasbeen_scraped=0;
 	
 	public static volatile boolean Pause = false; 
 	
@@ -40,6 +44,8 @@ public class Scraper
 	public final String directory;
 	
 	private File directory_file;
+	
+	protected final  DownLoader downloader; 
 	
 
 	/**
@@ -60,8 +66,9 @@ public class Scraper
 		this.directory_file = sysdirectory;
 		this.target = target;
 		this.rootscrapable = scr;
-		this.waitingfordonwload = new ConcurrentLinkedQueue<Scrapable>();
+		//this.waitingfordonwload = new ConcurrentLinkedQueue<Scrapable>();
 		this.setupArchive();
+		this.downloader = new DownLoader(this.directory_file);
 	}
 	
 	
@@ -83,17 +90,19 @@ public class Scraper
 	 */
 	public void execute()
 	{
-		println("Executing...");
+		println("Executing...Scraper");
 		
-		this.waitingfordonwload.add(this.rootscrapable); // remeber to add the root.....
+		//this.waitingfordonwload.add(this.rootscrapable); // remeber to add the root.....
 		
+		this.rootscrapable.doTheScraping(this.downloader);
+		this.webs_hasbeen_scraped++;
 		this.execute_Helper(this.rootscrapable);
 		
-		while(!this.waitingfordonwload.isEmpty())
-		{
-			Scrapable s = this.waitingfordonwload.remove();
-			Scrapable.createFileFromScrapable(this.directory_file, s);
-		}
+//		while(!this.waitingfordonwload.isEmpty())
+//		{
+//			Scrapable s = this.waitingfordonwload.remove();
+//			Scrapable.createFileFromScrapable(this.directory_file, s);
+//		}
 		this.StoreTheArchive();
 		
 	}
@@ -110,25 +119,34 @@ public class Scraper
 	{
 		if(Pause)return;
 		
-		if(this.waitingfordonwload.size()>this.target)return;// base case; 
-		Collection<Scrapable> thestuff=null;
+		if(this.webs_hasbeen_scraped>this.target)return;// base case; 
+		
+		Collection<Scrapable> nextscrapables=null;
+		
 		try 
 		{
-			thestuff = node.getNextWebPages();
-
+			nextscrapables = node.getNextWebPages();
 		} 
 		catch (IOException e)
 		{
 			e.printStackTrace();
 		}
 		
-		if(thestuff==null)return;// don't explode. also, base case....
-		this.waitingfordonwload.addAll(thestuff);
-		for(Scrapable s :thestuff)
+		if(nextscrapables==null)return;// don't explode. also, base case....
+		
+		
+		for(Scrapable s :nextscrapables)
 		{
 			s.createSynapse();
+			s.doTheScraping(downloader);
 		}
-		for(Scrapable s : thestuff)
+		
+		// increment this value.
+		this.webs_hasbeen_scraped+=nextscrapables.size();
+		
+		println("***********Scraping percentage:"+this.webs_hasbeen_scraped+"/"+this.target+"*******************");
+		
+		for(Scrapable s : nextscrapables)
 		{
 			this.execute_Helper(s);
 		}
@@ -139,9 +157,6 @@ public class Scraper
 		String s = new String();
 		s+="\n\n\n-------------------"+this.getClass()+"-----------------\n";
 		s+="Target: "+ this.target+"\n";
-		s+=this.waitingfordonwload.isEmpty()?"The queue is empty\n"
-				:
-			"The size of the queu: "+this.waitingfordonwload.size()+'\n';
 		s+="This is the system directory that download to: "+
 			this.directory+'\n';
 		return s; 
