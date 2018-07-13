@@ -83,6 +83,10 @@ public class SystemLog extends OutputStream
 		for(char c : o.toString().toCharArray())writechar(c);
 		println();
 	}
+	public static void print(Object o)
+	{
+		for(char c : o.toString().toCharArray())writechar(c);
+	}
 
 	
 	

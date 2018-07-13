@@ -14,6 +14,7 @@ import javax.swing.JTextPane;
 
 import Scraping.Scrapable;
 import Scraping.Scraper;
+import Untilities.sys.SystemLog;
 import WebPage.DeviantArt;
 import WebPage.DeviantArtBuilder;
 import WebPage.DeviantArtFavorite;
@@ -90,11 +91,13 @@ public class GuiModel
 		{
 			this.JTpane.append(o.toString());
 			this.JTpane.setCaretPosition(this.JTpane.getCaretPosition()+1);
+			SystemLog.print(o);
 		}
 		
 		public synchronized void println(Object o)
 		{
 			print(o.toString()+"\n");
+			SystemLog.println(o);
 		}
 		
 		public void setText(String s)
