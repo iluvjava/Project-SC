@@ -151,13 +151,16 @@ public class DownLoader
 				
 				BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream(file));
 				BufferedInputStream is = new BufferedInputStream(inputstream);
-				int temp;
+				
 				int loopcount=0;
-				while((temp = is.read())!=-1)
+				int arraylen=0;
+				
+				for(byte[] arr = new byte[2048*8];(arraylen = is.read(arr))!=-1;)
 				{
-					bos.write(temp);
-					loopcount++;
+					bos.write(arr, 0, arraylen);
+					loopcount+=arraylen;
 				}
+				
 				println("Buffered InputStream byte count: "+ loopcount);
 				is.close();
 				bos.close();

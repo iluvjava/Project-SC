@@ -100,7 +100,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	 */
 	private List<String> getLinksinDescription()
 	{
-		//println("Get links in description initiated.");
 		
 		ArrayList<String> astrlist = new ArrayList<String>();
 		
@@ -116,7 +115,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		
 			String artistname = this.getArtistName().toLowerCase();
 			
-			//println("This is the artist name: "+ artistname);
 			
 			Iterator<String> itr =astrlist.iterator();
 			
@@ -124,7 +122,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		{
 			
 			String temp = itr.next();
-			//println(temp);
 			if(temp.contains("fav.me"))
 			{
 				// don't remove
@@ -134,8 +131,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 				itr.remove();
 			}
 		}
-		//println("getLinksinDescription returns: ");
-		//println(astrlist);
 		return astrlist;
 	}
 	
@@ -150,7 +145,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		if(result.length()>0)
 			return result;
 		else
-		{return null;}
+		{return "";}
 	}
 	
 	/** 
@@ -319,9 +314,10 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			
 			ByteArrayOutputStream bis = new ByteArrayOutputStream();
 			
-			for(int temp;(temp = stream.read())!=-1;)
+			int len =0;
+			for(byte[] arr = new byte[2048*8];(len = stream.read(arr))!=-1;)
 			{
-				bis.write(temp);
+				bis.write(arr,0,len);
 			}
 			stream.close();
 			
@@ -443,12 +439,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			 println("---> "+ downloadlink);
 		}
 		return downloadlink;
-	}
-
-	public static void main(String[] args) 
-	{
-		
-	
 	}
 
 	public static void println(Object o )

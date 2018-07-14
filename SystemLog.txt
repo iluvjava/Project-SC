@@ -8733,3 +8733,1069 @@ Buffered InputStream byte count: 85641103
 We are trying to create a file for a scrapable under dir:
 C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC39.epub
 Buffered InputStream byte count: 64416088
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC40.pdf
+Buffered InputStream byte count: 88785062
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC40.epub
+Buffered InputStream byte count: 65104832
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC41.pdf
+Buffered InputStream byte count: 108798589
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC41.epub
+Buffered InputStream byte count: 80174714
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC42.pdf
+Buffered InputStream byte count: 71508628
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC42.epub
+Buffered InputStream byte count: 53909892
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC43.pdf
+Buffered InputStream byte count: 68943290
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC43.epub
+Buffered InputStream byte count: 64666214
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC44.pdf
+Buffered InputStream byte count: 140836364
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC44.epub
+Buffered InputStream byte count: 44774931
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC45.pdf
+Buffered InputStream byte count: 130837572
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC45.epub
+Buffered InputStream byte count: 41357856
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC46.pdf
+Buffered InputStream byte count: 100022489
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC46.epub
+Buffered InputStream byte count: 33457463
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC47.pdf
+Buffered InputStream byte count: 93015783
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC47.epub
+Buffered InputStream byte count: 30469620
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC48.pdf
+Buffered InputStream byte count: 124595921
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC48.epub
+Buffered InputStream byte count: 41483374
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC49.pdf
+Buffered InputStream byte count: 153490344
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC49.epub
+Buffered InputStream byte count: 52020445
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC50.pdf
+Buffered InputStream byte count: 171520230
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC50.epub
+Buffered InputStream byte count: 57522318
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC51.pdf
+Buffered InputStream byte count: 118770214
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC51.epub
+Buffered InputStream byte count: 37519983
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC52.pdf
+Buffered InputStream byte count: 116427920
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC52.epub
+Buffered InputStream byte count: 36845636
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC53.pdf
+Buffered InputStream byte count: 51863543
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC53.epub
+Buffered InputStream byte count: 49986085
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC54.pdf
+Buffered InputStream byte count: 38871156
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC54.epub
+Buffered InputStream byte count: 37902079
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC55.pdf
+Buffered InputStream byte count: 117059110
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC55.epub
+Buffered InputStream byte count: 108983916
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC56.pdf
+Buffered InputStream byte count: 106975604
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC56.epub
+Buffered InputStream byte count: 99175240
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC57.pdf
+Buffered InputStream byte count: 103381858
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC57.epub
+Buffered InputStream byte count: 97243168
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC58.pdf
+Buffered InputStream byte count: 103764452
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC58.epub
+Buffered InputStream byte count: 101414204
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC59.pdf
+Buffered InputStream byte count: 97223088
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC59.epub
+Buffered InputStream byte count: 94800572
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC60.pdf
+Buffered InputStream byte count: 46631954
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC60.epub
+Buffered InputStream byte count: 46202749
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC61.pdf
+Buffered InputStream byte count: 47432235
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC61.epub
+Buffered InputStream byte count: 47580243
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC62.pdf
+Buffered InputStream byte count: 44498704
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC62.epub
+Buffered InputStream byte count: 44402880
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC63.pdf
+Buffered InputStream byte count: 49865682
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC63.epub
+Buffered InputStream byte count: 48953538
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC64.pdf
+Buffered InputStream byte count: 45164561
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC64.epub
+Buffered InputStream byte count: 44231518
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC65.pdf
+Buffered InputStream byte count: 42509606
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC65.epub
+Buffered InputStream byte count: 41848569
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC66.pdf
+Buffered InputStream byte count: 45226831
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC66.epub
+Buffered InputStream byte count: 44643176
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC67.pdf
+Buffered InputStream byte count: 50316061
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-COMIC67.epub
+Buffered InputStream byte count: 49583397
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FIENDC01.pdf
+Buffered InputStream byte count: 68810113
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FIENDC01.epub
+Buffered InputStream byte count: 51000128
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FIENDC02.pdf
+Buffered InputStream byte count: 164231569
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FIENDC03.pdf
+Buffered InputStream byte count: 82863345
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FIENDC03.epub
+Buffered InputStream byte count: 61205317
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FIENDC04.pdf
+Buffered InputStream byte count: 75305784
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FIENDC04.epub
+Buffered InputStream byte count: 54427898
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FIENDC05.pdf
+Buffered InputStream byte count: 79730482
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FIENDC05.epub
+Buffered InputStream byte count: 60491182
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC01-HB.pdf
+Buffered InputStream byte count: 30014913
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC01-HB.epub
+Buffered InputStream byte count: 29652800
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC02-HB.pdf
+Buffered InputStream byte count: 26333841
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC02-HB.epub
+Buffered InputStream byte count: 28710667
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC03-HB.pdf
+Buffered InputStream byte count: 55338335
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC03-HB.epub
+Buffered InputStream byte count: 47046851
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC04-HB.pdf
+Buffered InputStream byte count: 28248510
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC04-HB.epub
+Buffered InputStream byte count: 30662299
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC05-HB.pdf
+Buffered InputStream byte count: 35397481
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC05-HB.epub
+Buffered InputStream byte count: 36427852
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC06-HB.pdf
+Buffered InputStream byte count: 40599603
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC06-HB.epub
+Buffered InputStream byte count: 29093710
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC07-HB.pdf
+Buffered InputStream byte count: 34243883
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC07-HB.epub
+Buffered InputStream byte count: 29820900
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC08-HB.pdf
+Buffered InputStream byte count: 28359949
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC08-HB.epub
+Buffered InputStream byte count: 24061730
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC09-HB.pdf
+Buffered InputStream byte count: 31029091
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC09-HB.epub
+Buffered InputStream byte count: 33051461
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MSCOMIC10-HB.pdf
+Buffered InputStream byte count: 47780114
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-MSCOMIC10-HB.epub
+Buffered InputStream byte count: 67661070
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC01-HB.pdf
+Buffered InputStream byte count: 20830003
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC01-HB.epub
+Buffered InputStream byte count: 20301938
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC02-HB.pdf
+Buffered InputStream byte count: 88914152
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC02-HB.epub
+Buffered InputStream byte count: 51775669
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC03-HB.pdf
+Buffered InputStream byte count: 26273128
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC03-HB.epub
+Buffered InputStream byte count: 54847011
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC04-HB.pdf
+Buffered InputStream byte count: 32578791
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC04-HB.epub
+Buffered InputStream byte count: 48212934
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC05-HB.pdf
+Buffered InputStream byte count: 77180839
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC05-HB.epub
+Buffered InputStream byte count: 46302995
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC06-HB.pdf
+Buffered InputStream byte count: 26570732
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC06-HB.epub
+Buffered InputStream byte count: 55490994
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC07-HB.pdf
+Buffered InputStream byte count: 82009023
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC07-HB.epub
+Buffered InputStream byte count: 50872428
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC08-HB.pdf
+Buffered InputStream byte count: 45453806
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC08-HB.epub
+Buffered InputStream byte count: 65449952
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC09-HB.pdf
+Buffered InputStream byte count: 89306202
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC09-HB.epub
+Buffered InputStream byte count: 53524848
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC10-HB.pdf
+Buffered InputStream byte count: 25386271
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC10-HB.epub
+Buffered InputStream byte count: 52034591
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC11.pdf
+Buffered InputStream byte count: 68131755
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC11.epub
+Buffered InputStream byte count: 51013968
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC12.pdf
+Buffered InputStream byte count: 71674976
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC12.epub
+Buffered InputStream byte count: 54603691
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC13.pdf
+Buffered InputStream byte count: 79254789
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC13.epub
+Buffered InputStream byte count: 57434667
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC14.pdf
+Buffered InputStream byte count: 75587059
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC14.epub
+Buffered InputStream byte count: 55137810
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC15.pdf
+Buffered InputStream byte count: 65135332
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC15.epub
+Buffered InputStream byte count: 50749248
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC16.pdf
+Buffered InputStream byte count: 78714128
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC16.epub
+Buffered InputStream byte count: 59595241
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC17.pdf
+Buffered InputStream byte count: 79027964
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC17.epub
+Buffered InputStream byte count: 59202386
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC18.pdf
+Buffered InputStream byte count: 68416112
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC18.epub
+Buffered InputStream byte count: 50760888
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC19.pdf
+Buffered InputStream byte count: 64921748
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC19.epub
+Buffered InputStream byte count: 50489499
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC20.pdf
+Buffered InputStream byte count: 66155588
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC20.epub
+Buffered InputStream byte count: 51566049
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC21.pdf
+Buffered InputStream byte count: 75402652
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC21.epub
+Buffered InputStream byte count: 55326255
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC22.pdf
+Buffered InputStream byte count: 62501758
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC22.epub
+Buffered InputStream byte count: 46395878
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC23.pdf
+Buffered InputStream byte count: 77330873
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC23.epub
+Buffered InputStream byte count: 56907614
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC24.pdf
+Buffered InputStream byte count: 70765125
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC24.epub
+Buffered InputStream byte count: 53644754
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC25.pdf
+Buffered InputStream byte count: 104453347
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC25.epub
+Buffered InputStream byte count: 76828509
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC26.pdf
+Buffered InputStream byte count: 87967310
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC26.epub
+Buffered InputStream byte count: 65973327
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC27.pdf
+Buffered InputStream byte count: 85020725
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC27.epub
+Buffered InputStream byte count: 63075184
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC28.pdf
+Buffered InputStream byte count: 79082626
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC28.epub
+Buffered InputStream byte count: 59155460
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC29.pdf
+Buffered InputStream byte count: 66212914
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC29.epub
+Buffered InputStream byte count: 65445868
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC30.pdf
+Buffered InputStream byte count: 77907334
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC30.epub
+Buffered InputStream byte count: 73816103
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC31.pdf
+Buffered InputStream byte count: 114295773
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC31.epub
+Buffered InputStream byte count: 35722528
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC32.pdf
+Buffered InputStream byte count: 86536980
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC32.epub
+Buffered InputStream byte count: 27835342
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC33.pdf
+Buffered InputStream byte count: 143475087
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC33.epub
+Buffered InputStream byte count: 45398576
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC34.pdf
+Buffered InputStream byte count: 113201406
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC34.epub
+Buffered InputStream byte count: 35877048
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC35.pdf
+Buffered InputStream byte count: 127947453
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC35.epub
+Buffered InputStream byte count: 42944992
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC36.pdf
+Buffered InputStream byte count: 117256108
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC36.epub
+Buffered InputStream byte count: 44390703
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC37.pdf
+Buffered InputStream byte count: 176321095
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC37.epub
+Buffered InputStream byte count: 60057638
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-FFCOMIC38.pdf
+Buffered InputStream byte count: 54075225
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-FFCOMIC38.epub
+Buffered InputStream byte count: 52588212
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ANNUAL2013.pdf
+Buffered InputStream byte count: 96617862
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ANNUAL2014.pdf
+Buffered InputStream byte count: 141069239
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-ANNUAL2014.epub
+Buffered InputStream byte count: 103511576
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-HOLIDAY14.pdf
+Buffered InputStream byte count: 139418758
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-HOLIDAY14.epub
+Buffered InputStream byte count: 103048098
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-HOLIDAY15.pdf
+Buffered InputStream byte count: 66411503
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-HOLIDAY15.epub
+Buffered InputStream byte count: 50284095
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ANNUAL2017.pdf
+Buffered InputStream byte count: 325186450
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-ANNUAL2017.epub
+Buffered InputStream byte count: 106080390
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-HOLIDAY17.pdf
+Buffered InputStream byte count: 53138085
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ANNUAL2018.pdf
+Buffered InputStream byte count: 77492153
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC-The.Magic.Begins.pdf
+Buffered InputStream byte count: 194893185
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC-When.Cutie-Call-HB.pdf
+Buffered InputStream byte count: 58020643
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC-The.Return.Of.Harmony-HB.pdf
+Buffered InputStream byte count: 97156581
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC-A.Canterlot.Wedding.pdf
+Buffered InputStream byte count: 327205269
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-COMIC-Pageants.&.Ponies.pdf
+Buffered InputStream byte count: 318073192
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-CCOVER01.pdf
+Buffered InputStream byte count: 31403584
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-CCOVER01.epub
+Buffered InputStream byte count: 32863118
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ARTGALLERY.pdf
+Buffered InputStream byte count: 31360868
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-ARTGALLERY.epub
+Buffered InputStream byte count: 33003584
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ARTISMAGIC.pdf
+Buffered InputStream byte count: 1110511000
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ARTOFEQUESTRIA.pdf
+Buffered InputStream byte count: 585579608
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-ARTOFTHEMOVIE.pdf
+Buffered InputStream byte count: 388997070
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK01.pdf
+Buffered InputStream byte count: 2273047
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK01.epub
+Buffered InputStream byte count: 1604862
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK02.pdf
+Buffered InputStream byte count: 2248603
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK02.epub
+Buffered InputStream byte count: 1821455
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK03.pdf
+Buffered InputStream byte count: 2104020
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK03.epub
+Buffered InputStream byte count: 4236499
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK04.pdf
+Buffered InputStream byte count: 3017496
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK04.epub
+Buffered InputStream byte count: 2383262
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK05.pdf
+Buffered InputStream byte count: 1893632
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK05.epub
+Buffered InputStream byte count: 1321820
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK06.pdf
+Buffered InputStream byte count: 2240947
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK06.epub
+Buffered InputStream byte count: 1877747
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK07.pdf
+Buffered InputStream byte count: 3228322
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-BOOK07.epub
+Buffered InputStream byte count: 2283887
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK08.pdf
+Buffered InputStream byte count: 3228322
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK09.pdf
+Buffered InputStream byte count: 2673704
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-BOOK10.pdf
+Buffered InputStream byte count: 2257651
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK03.pdf
+Buffered InputStream byte count: 2914229
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK04.pdf
+Buffered InputStream byte count: 2164178
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK05.pdf
+Buffered InputStream byte count: 2799166
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK06.pdf
+Buffered InputStream byte count: 2667889
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK07.pdf
+Buffered InputStream byte count: 159703912
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGBOOK08.pdf
+Buffered InputStream byte count: 3902057
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-PCBOOK01.pdf
+Buffered InputStream byte count: 3524610
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-PCBOOK02.pdf
+Buffered InputStream byte count: 1515392
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-PCBOOK03.pdf
+Buffered InputStream byte count: 3853458
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-PCBOOK04.pdf
+Buffered InputStream byte count: 2888661
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\PM-Schoolhouse_of_Secrets.pdf
+Buffered InputStream byte count: 915189
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\PM-The_Tail_of_the_Timberwolf.pdf
+Buffered InputStream byte count: 1597609
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\PM-Riddle_of_the_Rusty_Horseshoe.pdf
+Buffered InputStream byte count: 1305186
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\DD-Forbidden_City_of_Clouds.pdf
+Buffered InputStream byte count: 425201
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\DD-Eternal_Flower.pdf
+Buffered InputStream byte count: 567381
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\DD-Marked_Thief_of_Marapore.pdf
+Buffered InputStream byte count: 535914
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MPCOMIC01.pdf
+Buffered InputStream byte count: 104262720
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MPCOMIC02.pdf
+Buffered InputStream byte count: 90302528
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MPCOMIC03.pdf
+Buffered InputStream byte count: 37656511
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MPCOMIC04.pdf
+Buffered InputStream byte count: 90057672
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-MLPMovieAdaptation.pdf
+Buffered InputStream byte count: 121275435
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-Adventure_Awaits.pdf
+Buffered InputStream byte count: 213109707
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-Friends_and_Foes-LQ.pdf
+Buffered InputStream byte count: 53433484
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-Pony_Pirate_Party-LQ.pdf
+Buffered InputStream byte count: 61665520
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-Seaponies_Make_a_Splash.pdf
+Buffered InputStream byte count: 31779458
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-The_Great_Princess_Caper-LQ.pdf
+Buffered InputStream byte count: 25075351
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-Look_&_Find.pdf
+Buffered InputStream byte count: 69702775
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-The_Junior_Novel.pdf
+Buffered InputStream byte count: 12010438
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Movie-The_Stormy_Road_to_Canterlot.pdf
+Buffered InputStream byte count: 1244939
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC01.pdf
+Buffered InputStream byte count: 47723832
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC02.pdf
+Buffered InputStream byte count: 51170038
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC03.pdf
+Buffered InputStream byte count: 41743883
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC04.pdf
+Buffered InputStream byte count: 94175528
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC05.pdf
+Buffered InputStream byte count: 94677531
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC06.pdf
+Buffered InputStream byte count: 98584438
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC07.pdf
+Buffered InputStream byte count: 94418897
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC08.pdf
+Buffered InputStream byte count: 46347321
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC09.pdf
+Buffered InputStream byte count: 40756921
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC10.pdf
+Buffered InputStream byte count: 41069712
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC11.pdf
+Buffered InputStream byte count: 46535896
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-LOMCOMIC12.pdf
+Buffered InputStream byte count: 43846206
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-CDEVIATIONS01.pdf
+Buffered InputStream byte count: 56264086
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-Welcome_To_Equestria.pdf
+Buffered InputStream byte count: 30517400
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-Welcome_To_Equestria.epub
+Buffered InputStream byte count: 13911529
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-Welcome_To_The_Crystal_Empire.pdf
+Buffered InputStream byte count: 28266288
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-Welcome_To_The_Crystal_Empire-audio.pdf
+Buffered InputStream byte count: 39887095
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-Welcome_To_The_Crystal_Empire.epub
+Buffered InputStream byte count: 14119659
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-Meet_The_Ponies.pdf
+Buffered InputStream byte count: 30894625
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-Meet_The_Ponies.epub
+Buffered InputStream byte count: 5330989
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Good_Night_baby_Flurry_Heart.pdf
+Buffered InputStream byte count: 6767756
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-Under_The_Sparkling_Sea.pdf
+Buffered InputStream byte count: 80640635
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-Under_The_Sparkling_Sea.epub
+Buffered InputStream byte count: 21026014
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-The_Dragons_on_Dazzle_Island.pdf
+Buffered InputStream byte count: 23851631
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\My_Little_Pony_and_the_Mystery_Chase_(G1).pdf
+Buffered InputStream byte count: 2292599
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\The_Elements_of_Harmony.pdf
+Buffered InputStream byte count: 131428924
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\The_Elements_of_Harmony_Vol2.pdf
+Buffered InputStream byte count: 299851577
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\The_Wonderbolts_Handbook.pdf
+Buffered InputStream byte count: 68857937
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\MLP_The_Ultimate_Guide.pdf
+Buffered InputStream byte count: 263900291
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\The_Journal_of_the_Two_Sisters.pdf
+Buffered InputStream byte count: 97128850
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-PDF-EQGRR.pdf
+Buffered InputStream byte count: 3678805
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\YP-EPUB-EQGRR.epub
+Buffered InputStream byte count: 3105559
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Canterlot_High_Tell-all.pdf
+Buffered InputStream byte count: 149425496
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\Wondercolts_Forever_The_Diary_of_Celestia_and_Luna.pdf
+Buffered InputStream byte count: 130237246
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\My_Little_Pony_Comic_&_Quiz_(Pucchi_Gumi_Best).pdf
+Buffered InputStream byte count: 22545266
+Ths scraper is storing the the visited web sites onto the hard disk; 
+Here is the result: sucessful
+----->Fetching a new Dowload mission...
+We are trying to create a file for a scrapable under dir:
+C:\Users\victo\Documents\Luna republic\humans.txt
+Buffered InputStream byte count: 1168
