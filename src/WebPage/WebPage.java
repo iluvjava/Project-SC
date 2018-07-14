@@ -1,5 +1,6 @@
 package WebPage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -98,7 +99,7 @@ public interface WebPage
 	/**
 	 * 
 	 * @return
-	 * the jsoup connection of the page. 
+	 * the jsoup connection of the page. ,null if page is loaded 
 	 */
 	public Connection getConnection();
 	
@@ -137,6 +138,12 @@ public interface WebPage
 	{
 		return null;
 	}
+	
+	/**
+	 * @return
+	 * null if something is wrong. 
+	 */
+	InputStream getResponseAsStream();
 	
 	
 	

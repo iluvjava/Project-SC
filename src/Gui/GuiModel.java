@@ -12,12 +12,15 @@ import java.util.List;
 import javax.swing.JTextArea;
 import javax.swing.JTextPane;
 
+import com.beust.jcommander.internal.Nullable;
+
 import Scraping.Scrapable;
 import Scraping.Scraper;
 import Untilities.sys.SystemLog;
 import WebPage.DeviantArt;
 import WebPage.DeviantArtBuilder;
 import WebPage.DeviantArtFavorite;
+import WebPage.SomeVeryGeneralWebPage;
 
 /**
  * This class will be the model behind the gui 
@@ -42,11 +45,12 @@ public class GuiModel
 	
 	ScraperGui G_GUI;
 	public static volatile DisplayText G_displayedText; // the text panel essentially. 
+	private static volatile boolean streamprintmode = true;
 	
 	
 	/********************things for data part**********************/
 	File dir;
-	String initiallink;
+	String userlink;
 	private Scrapable scr;
 	private volatile Scraper scraper;
 	int target=0;
@@ -80,6 +84,8 @@ public class GuiModel
 	{
 		private TextArea JTpane;
 		
+		private int lastlineLen=0;
+		
 		
 		public DisplayText(TextArea panel)
 		{
@@ -87,18 +93,30 @@ public class GuiModel
 		}
 		
 		
-		
+		/**
+		 * Null is no problem. 
+		 * @param o
+		 */
 		public synchronized void print(Object o)
 		{
-			this.JTpane.append(o.toString());
-			this.JTpane.setCaretPosition(this.JTpane.getCaretPosition()+1);
+			this.JTpane.append(o==null?"null":o.toString());
+			
 			SystemLog.print(o);
 		}
 		
 		public synchronized void println(Object o)
 		{
-			print(o.toString()+"\n");
+			String txt =o==null?"null": o.toString();
+			if(!streamprintmode)
+			{
+				// replace the last line of input. 
+				this.JTpane.replaceRange(txt, this.JTpane.getCaretPosition()-this.lastlineLen, this.JTpane.getCaretPosition());
+				this.lastlineLen = txt.length();
+				return;
+			}
 			
+			this.lastlineLen = txt.length()+1;
+			print(txt+(streamprintmode?"\n":""));
 		}
 		
 		public void setText(String s)
@@ -133,17 +151,19 @@ public class GuiModel
 		}
 		
 		this.target = (int) this.G_GUI.getSpinner().getValue();
-		this.initiallink = this.G_GUI.getTextField().getText();
+		this.userlink = this.G_GUI.getTextField().getText();
 		println("Setting target: "+this.target);
 
-		println("Setting the URL: "+ this.initiallink);
-     	println("This is some sort of a deviant art link. ");
-		Scrapable scrapable = DeviantArtBuilder.getInstance(this.initiallink);
+		println("Setting the URL: "+ this.userlink);
+     	println("Is this some sort of a special link? ");
 		
+     	Scrapable scrapable = DeviantArtBuilder.getInstance(this.userlink);
 		
+		if (scrapable ==null)scrapable =SomeVeryGeneralWebPage.getInstance(this.userlink);
 		
 		if(scrapable == null)
 		{
+			// function terminates here. 
 			println("Cannot Recognize url.");return false;
 		}
 		
@@ -239,6 +259,19 @@ public class GuiModel
 			Scraper.Pause=false;
 			break;
 		}
+		
+	}
+	
+	/**
+	 * Stream print enable means each new line will be appended to the textpanel<br>
+	 * disable means the old line will always be replaced by the new lines, significanly 
+	 * speed up the out put speed of the panel. 
+	 * 
+	 * @param b
+	 */
+	public static synchronized void  setStreamPrintMode(boolean b)
+	{
+		streamprintmode =b;
 		
 	}
 	

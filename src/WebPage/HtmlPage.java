@@ -1,5 +1,6 @@
 package WebPage;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -44,6 +45,8 @@ public abstract class HtmlPage implements WebPage
 	protected Document thispagecontent;	
 	
 	protected Response response;
+	
+	protected InputStream responseStream;
 	
 	protected String thispageURL;
 	
@@ -261,6 +264,11 @@ public abstract class HtmlPage implements WebPage
 	{
 		if(this.getDoc()!=null)return this.getDoc().getElementsByTag("title").text();
 		return "Title null, webURL: "+this.thispageURL;
+	}
+	
+	public InputStream getResponseAsStream()
+	{
+		return null; 
 	}
 	
 	

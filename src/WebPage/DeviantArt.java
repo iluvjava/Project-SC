@@ -199,7 +199,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			slist.add(e.parent().attr("href"));
 		}
 		
-//		println("Sub_getMoreDA return: "+ slist.toString());
 		
 		return slist;
 	}
@@ -267,6 +266,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	 */
 	public Scrapable prepare() 
 	{
+		GuiModel.setStreamPrintMode(false);
 		println("Creating synapses: ");
 		for(String s : this.getMoreDA())
 		{
@@ -279,6 +279,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		}
 		//println("All next stage pages are added to the field");
 		//println(this.G_nextPages);
+		GuiModel.setStreamPrintMode(true);
 		return this;
 	}
 

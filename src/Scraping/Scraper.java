@@ -58,6 +58,7 @@ public class Scraper
 	 */
 	public Scraper(Scrapable scr, File sysdirectory, int target)
 	{
+		assert scr!=null&&sysdirectory!=null;
 		if(target<1||target>=500||!sysdirectory.exists()||!sysdirectory.isDirectory())
 		{
 			throw new AssertionError("Scrapar class invariant dissatified. ");
@@ -92,17 +93,14 @@ public class Scraper
 	{
 		println("Executing...Scraper");
 		
-		//this.waitingfordonwload.add(this.rootscrapable); // remeber to add the root.....
-		
+		this.rootscrapable.prepare();
 		this.rootscrapable.doTheScraping(this.downloader);
 		this.webs_hasbeen_scraped++;
-		this.execute_Helper(this.rootscrapable);
 		
-//		while(!this.waitingfordonwload.isEmpty())
-//		{
-//			Scrapable s = this.waitingfordonwload.remove();
-//			Scrapable.createFileFromScrapable(this.directory_file, s);
-//		}
+		
+		this.execute_Helper(this.rootscrapable); // recursion starts here. 
+		
+
 		this.StoreTheArchive();
 		
 	}
