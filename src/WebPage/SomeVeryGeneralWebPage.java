@@ -176,6 +176,12 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 		for(String s : this.URLSInterestedIn)
 		{
 			
+			String filename = s.substring(s.lastIndexOf("/")+1, s.length());
+			if(dl.fileAlreadyExist(filename))
+			{
+				println("File: "+filename+" already exists, I won't download. ");
+				continue; 
+			}
 			try 
 			{
 				URL url = new URL(s);
@@ -195,7 +201,7 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 				bis.close();
 				
 				
-				dl.forwardFile(s.substring(s.lastIndexOf("/")+1, s.length()),result);
+				dl.forwardFile(filename,result);
 			}
 			catch ( Exception e) 
 			{

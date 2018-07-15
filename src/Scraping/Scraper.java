@@ -47,6 +47,8 @@ public class Scraper
 	
 	protected final  DownLoader downloader; 
 	
+	private Thread runningthred ;
+	
 
 	/**
 	 * 
@@ -70,8 +72,43 @@ public class Scraper
 		//this.waitingfordonwload = new ConcurrentLinkedQueue<Scrapable>();
 		this.setupArchive();
 		this.downloader = new DownLoader(this.directory_file);
+		
+		
+		// Start a thread to keep storing the archive. 
+		Thread t = new Thread
+				(
+						new Runnable()
+						{
+							public void run()
+							{
+								while (true)
+								{
+									Scraper.this.StoreTheArchive();
+									try 
+									{
+										Thread.sleep(10000);
+									} 
+									catch (InterruptedException e) 
+									{
+										e.printStackTrace();
+									}
+								}
+							}
+						}
+						
+				);
+		t.start();
+		this.runningthred =t;
+		
 	}
 	
+	
+	protected void finalize() throws InterruptedException
+	{
+		if(this.runningthred!=null) {
+			this.runningthred.interrupt();
+		}
+	}
 	
 	/**
 	 * <b>Unit Tested, 75% safe</b>

@@ -10,6 +10,7 @@ import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 
+import Gui.GuiModel;
 import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
@@ -58,7 +59,7 @@ public class DeviantArtFavorite implements Scrapable
 	@Override
 	public Scrapable prepare() 
 	{
-		Scrapable.G_alreadyVistedURL.addAll(all_thumb_link);
+		
 		return this;
 	}
 
@@ -75,14 +76,16 @@ public class DeviantArtFavorite implements Scrapable
 		
 		this.driverAPI.close();
 		
-		Map<String,InputStream> result = new HashMap<>();
+		
 		for(String s : this.all_thumb_link)
 		{
-			//if(this.pauseAndSkip())break;
+			// If the web has been visted from the last time; it will be skipped. 
+			if(Scrapable.G_alreadyVistedURL.contains(s))continue;
 			try
 			{
 				DeviantArt d = new DeviantArt(s);
 				d.doTheScraping(dl);
+				Scrapable.G_alreadyVistedURL.add(s); // only add if there is not error detected. 
 			}
 			catch(Error ee)
 			{
@@ -108,6 +111,8 @@ public class DeviantArtFavorite implements Scrapable
 	
 	protected void getAllThumbsLinks()
 	{
+		GuiModel.setStreamPrintMode(false);
+		
 		Set<String> allthumblinks= new HashSet<>();
 		try{
 			do
@@ -116,12 +121,10 @@ public class DeviantArtFavorite implements Scrapable
 				for(WebElement e : this.driverAPI.getElementsByName("torpedo-thumb-link"))
 				{
 					String temp = e.getAttribute("href");
-					
 					System.out.println(temp);
-					
-					if(Scrapable.G_alreadyVistedURL.contains(temp))continue;
 					allthumblinks.add(temp);
 				}
+				GuiModel.println("ThumbsLinks: "+allthumblinks.size());
 			}
 			while(this.driverAPI.scrollDown()&&!this.pauseAndSkip());
 		}catch(Exception e)
@@ -129,11 +132,12 @@ public class DeviantArtFavorite implements Scrapable
 			e.printStackTrace();
 		}
 		
-		
+		GuiModel.setStreamPrintMode(true);
 		
 		this.all_thumb_link = allthumblinks;
-		System.out.println("All the Thumb links created: ");
+		System.out.println("\nAll the Thumb links are stored: ");
 		System.out.println(allthumblinks);
+		GuiModel.println("Number of thumblinks: "+allthumblinks.size());
 		
 	}
 

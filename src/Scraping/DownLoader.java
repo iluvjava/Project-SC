@@ -63,13 +63,7 @@ public class DownLoader
 	 
 	 protected void finalize()
 	 {
-		 try 
-		{
-			this.runningDownloading.join();
-		} catch (InterruptedException e) 
-		{
-			e.printStackTrace();
-		}
+		 this.runningDownloading.interrupt();;
 		 
 	 }
 	
@@ -86,6 +80,17 @@ public class DownLoader
 		FileNameAndStream fips = new FileNameAndStream(this.download_directory);
 		fips.forwardFile(filename, ips);
 		this.waitingfordonwload.add(fips);
+	}
+	
+	/**
+	 * 
+	 * @return
+	 * A boolean true, if there is altready a file with a given name.
+	 */
+	public boolean fileAlreadyExist(String name)
+	{
+		File f = new File(this.download_directory.getAbsolutePath()+"\\"+name);
+		return f.exists();
 	}
 	
 	

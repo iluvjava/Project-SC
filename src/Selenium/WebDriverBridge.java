@@ -269,7 +269,7 @@ enum TheDriver
 	
 	public void close()
 	{
-		if(d!=null)d.close();
+		if(d!=null)d.quit();
 		this.d = null; 
 	}
 	

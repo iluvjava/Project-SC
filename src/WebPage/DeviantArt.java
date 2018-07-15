@@ -263,6 +263,7 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	{
 		GuiModel.setStreamPrintMode(false);
 		println("Creating synapses: ");
+		
 		for(String s : this.getMoreDA())
 		{
 			// only tries to visited the unvisited pages. 
@@ -298,9 +299,14 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 			
 			for(Entry<String, InputStream> en:result.entrySet())
 			{
+				if(dl.fileAlreadyExist(en.getKey()))
+					{
+						println("The file is already there, I refuse to download. ->"+en.getKey());
+						continue;
+					}
 				dl.forwardFile(en.getKey(), en.getValue());
 			}
-			
+			return ;
 		}
 		
 		String sourcelink = this.G_theimage;
@@ -308,30 +314,36 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		try
 		{
 		
+			String filename = Scrapable.getFilenameFromScrapable(this);
+			
+			if(dl.fileAlreadyExist(filename))
+			{
+				println("The file is already there, I refuse to download. ->"+filename);
+				return;
+			}
+			
 			URL url = new URL(sourcelink);
 			
 			InputStream stream = new BufferedInputStream(url.openStream());
 			
 			ByteArrayOutputStream bis = new ByteArrayOutputStream();
 			
-			int len =0;
-			for(byte[] arr = new byte[2048*8];(len = stream.read(arr))!=-1;)
-			{
-				bis.write(arr,0,len);
-			}
-			stream.close();
+			// reading from URL and forward result.
 			
-			InputStream result = new ByteArrayInputStream(bis.toByteArray());
-			this.theimgbytearray = bis.toByteArray();
-			bis.close();
+				int len =0;
+				for(byte[] arr = new byte[2048*8];(len = stream.read(arr))!=-1;)
+				{
+					bis.write(arr,0,len);
+				}
+				stream.close();
+				
+				InputStream fileinputstream = new ByteArrayInputStream(bis.toByteArray());
+				
+				this.theimgbytearray = bis.toByteArray();
+				
+				bis.close();
 			
-			Map<String,InputStream> listofresult = new HashMap<>();
-			listofresult.put(Scrapable.getFilenameFromScrapable(this),result);
-			
-			for(Entry<String, InputStream> en:listofresult.entrySet())
-			{
-				dl.forwardFile(en.getKey(), en.getValue());
-			}
+				dl.forwardFile(filename, fileinputstream);
 		
 		}catch (Exception e) {
 			e.printStackTrace();
