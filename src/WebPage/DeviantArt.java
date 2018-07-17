@@ -38,8 +38,14 @@ import Scraping.Scraper;
 public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 
 	private Collection<String> G_nextPages = new TreeSet<String>(); // A string representaion of all the pages that are on this page. 
-	String G_theimage; // the image link of this page. 
+	
+	
+	String G_theimage; // the image link of this page, this var could be null. 
+	
+	
 	private Collection<Scrapable> G_moreAD ;// all the others pages that is one this pages
+	
+	
 	byte[] theimgbytearray;// the image in byte array. 
 	
 	
@@ -70,7 +76,9 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	public DeviantArt(String link,String referedlink) throws IOException 
 	{
 		super(link);
+		
 		if(!DeviantArt.isInDadomain(link))throw new IllegalArgumentException();
+		
 		if(referedlink!=null)this.setReferedLink(referedlink);
 		this.ignorecontentType(false);
 		this.setRedirect(true); //recentely added. 
@@ -316,6 +324,11 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		
 			String filename = Scrapable.getFilenameFromScrapable(this);
 			
+			if(filename==null)
+			{
+				println("File name is null, can not forward download.");
+			}
+			
 			if(dl.fileAlreadyExist(filename))
 			{
 				println("The file is already there, I refuse to download. ->"+filename);
@@ -475,6 +488,21 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		return Scraper.Pause;
 		
 	}
+	
+	/**
+	 * 
+	 * @return
+	 * A legitimate name for the file. 
+	 */
+	@Deprecated
+	protected String getFilename()
+	{
+		String fn = this.getSourceContentUrl();
+		if(null==fn)
+		return null;
+			return fn.substring(fn.lastIndexOf('/'+1),fn.length());
+	}
+	
 	
 	
 	

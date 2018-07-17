@@ -9,6 +9,7 @@ import java.util.EventListener;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
 import javax.swing.JTextPane;
 
@@ -19,7 +20,7 @@ import Scraping.Scraper;
 import Untilities.sys.SystemLog;
 import WebPage.DeviantArt;
 import WebPage.DeviantArtBuilder;
-import WebPage.DeviantArtFavorite;
+import WebPage.DeviantArtFavoriteOrGallery;
 import WebPage.SomeVeryGeneralWebPage;
 
 /**
@@ -46,7 +47,7 @@ public class GuiModel
 	ScraperGui G_GUI;
 	public static volatile DisplayText G_displayedText; // the text panel essentially. 
 	private static volatile boolean streamprintmode = true;
-	
+	private static volatile  JProgressBar loadingbar;
 	
 	/********************things for data part**********************/
 	File dir;
@@ -60,6 +61,8 @@ public class GuiModel
 		if(arg instanceof View)this.G_GUI = (ScraperGui) arg;
 		
 		G_displayedText = new DisplayText(G_GUI.getTextArea());
+		
+		this.loadingbar = G_GUI.getProgressBar();
 	}
 	
 	
@@ -273,6 +276,12 @@ public class GuiModel
 	{
 		streamprintmode =b;
 		
+	}
+	
+	
+	public static JProgressBar getProgressBar()
+	{
+		return loadingbar;
 	}
 	
 

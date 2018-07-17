@@ -1,12 +1,14 @@
 package WebPage;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import Scraping.Scrapable;
 
 public class TestEverything {
 
@@ -21,7 +23,7 @@ public class TestEverything {
 	@Test
 	public void test() throws IOException 
 	{
-		//testingDA("https://rainbow-highway.deviantart.com/art/The-Jewey-674978328");
+		//testingDA("https://www.deviantart.com/amarynceus/art/Daily-Doodle-624-754577035");
 		
 //		testEqualsofHtmlPage();
 		
@@ -30,8 +32,12 @@ public class TestEverything {
 //		testDeviantArtFavorite();
 		
 		
-		testingGettingTilte();
+		//testingGettingTilte();
+		
+		
+		testingDeviantArtBuilder();
 	}
+	
 	/**
 	 * testing da basic functionality: 
 	 * 1. loading the page
@@ -95,7 +101,7 @@ public class TestEverything {
 		println("----Testing if the given link is a DA favourite link.---");
 		String url = "https://www.deviantart.com/sarmateppou/favourites/";
 		println(url);
-		println(DeviantArtFavorite.isDomain(url));
+		println(DeviantArtFavoriteOrGallery.isDomain(url));
 		
 	}
 	
@@ -104,6 +110,15 @@ public class TestEverything {
 	{
 		HtmlPage pg = new Page("https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/move");
 		println(pg.getTitle());
+	}
+	
+	public static void testingDeviantArtBuilder()
+	{
+		Scrapable scr = DeviantArtBuilder.getInstance("https://www.deviantart.com/foxinshadow/gallery/");
+		
+		System.out.println("Trying to get a gallery DA link. ");
+		
+		System.out.println(scr.getClass());
 	}
 	
 	

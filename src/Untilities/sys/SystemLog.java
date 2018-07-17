@@ -25,6 +25,7 @@ public class SystemLog extends OutputStream
 	
 	public final static File outputFile; 
 	public static final RandomAccessFile raf;
+	
 	static
 	{
 		outputFile = new File("SystemLog.txt");
@@ -67,7 +68,7 @@ public class SystemLog extends OutputStream
 		raf.write(arg0);
 	}
 	
-	private static void writechar(int arg0)
+	private static void writechar(char arg0)
 	{
 	
 		try 
@@ -75,7 +76,7 @@ public class SystemLog extends OutputStream
 			raf.write(arg0);
 		} catch (IOException e) 
 		{
-		System.out.print(arg0);
+			System.out.print(arg0);
 		}
 	}
 	

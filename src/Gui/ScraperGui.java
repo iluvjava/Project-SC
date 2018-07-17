@@ -59,6 +59,7 @@ public class ScraperGui implements View{
 	private JScrollPane scrollPane;
 	private TextArea textArea;
 	private JButton btnStop;
+	private JProgressBar progressBar;
 
 	/**
 	 * Launch the application.
@@ -98,7 +99,7 @@ public class ScraperGui implements View{
 	private void initialize() {
 		frame = new JFrame();
 		frame.setAutoRequestFocus(false);
-		frame.setBounds(100, 100, 966, 661);
+		frame.setBounds(100, 100, 1207, 838);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new BorderLayout(0, 0));
 		
@@ -107,6 +108,7 @@ public class ScraperGui implements View{
 		btnStart.setToolTipText(ToolTips.StartBottonTips.ToolTips);
 		
 		panel = new JPanel();
+		panel.setToolTipText("A loading bar");
 		frame.getContentPane().add(panel, BorderLayout.NORTH);
 		
 		textField = new JTextField();
@@ -119,6 +121,9 @@ public class ScraperGui implements View{
 		
 		panel.add(spinner);
 		spinner.setModel(new SpinnerNumberModel(15, 1, 500, 1));
+		
+		progressBar = new JProgressBar();
+		panel.add(progressBar);
 		
 		scrollPane = new JScrollPane();
 		frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
@@ -252,5 +257,9 @@ public class ScraperGui implements View{
 	
 	public JButton getBtnPause() {
 		return btnStop;
+	}
+	
+	public JProgressBar getProgressBar() {
+		return progressBar;
 	}
 }

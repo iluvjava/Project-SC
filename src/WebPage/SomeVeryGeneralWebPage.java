@@ -24,6 +24,7 @@ import Gui.GuiModel;
 import Scraping.DownLoader;
 import Scraping.Scrapable;
 import Scraping.Scraper;
+import Untilities.sys.ErrorLog;
 
 
 /**
@@ -207,7 +208,7 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 			{
 				println("File : "+s+" Openstream failed.");
 				e.printStackTrace();
-				
+				for(Object o : e.getStackTrace())ErrorLog.println(o);
 			}
 			
 		}

@@ -22,7 +22,7 @@ public class DeviantArtBuilder
 	public static Scrapable getInstance(final String DA_url)
 	{
 		if(!isInDadomain(DA_url))return null; 
-		if(isFavoritePage(DA_url))return new DeviantArtFavorite(DA_url);
+		if(isFavoritePageOrGallery(DA_url))return new DeviantArtFavoriteOrGallery(DA_url);
 		try {
 			return new DeviantArt(DA_url);
 		} catch (IOException e) {
@@ -49,9 +49,9 @@ public class DeviantArtBuilder
 	 * @return
 	 * A boolean represents whether if the given parameter is a url of deviant art favorite page. 
 	 */
-	private static boolean isFavoritePage(String arg)
+	private static boolean isFavoritePageOrGallery(String arg)
 	{
-		return arg.matches("https://www.deviantart.com/.*/favourites/.*"); 
+		return arg.matches("https://www.deviantart.com/.*/(favourites|gallery)/.*"); 
 	}
 
 }

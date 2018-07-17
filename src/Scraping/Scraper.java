@@ -8,6 +8,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import FileManagement.NotADirectoryException;
 import FileManagement.ObjectCache;
 import Gui.GuiModel;
+import Untilities.sys.ErrorLog;
 
 
 
@@ -91,6 +92,7 @@ public class Scraper
 									catch (InterruptedException e) 
 									{
 										e.printStackTrace();
+										for(Object o :e.getStackTrace())ErrorLog.println(o);
 									}
 								}
 							}
@@ -164,6 +166,7 @@ public class Scraper
 		} 
 		catch (IOException e)
 		{
+			for(Object o :e.getStackTrace())ErrorLog.println(o);
 			e.printStackTrace();
 		}
 		
@@ -233,6 +236,7 @@ public class Scraper
 		} 
 		catch (NotADirectoryException e) 
 		{
+			for(Object o :e.getStackTrace())ErrorLog.println(o);
 			e.printStackTrace();
 		}
 		return result;
@@ -263,7 +267,7 @@ public class Scraper
 		}
 		else
 		{
-			println("We didn't find any archive......");
+			println("We didn't find any archive in the dir...");
 		}
 		
 	}
@@ -277,6 +281,7 @@ public class Scraper
 	 */
 	private void StoreTheArchive()
 	{
+		
 		Collection<String> stuff = Scrapable.G_alreadyVistedURL;
 		try {
 			ObjectCache<Collection<String>> objc 
@@ -285,10 +290,9 @@ public class Scraper
 			
 			boolean result = objc.writeObject();
 			
-			println("Ths scraper is storing the the visited web sites onto the hard disk; ");
-			if(result)println("Here is the result: sucessful");else println("Unsucessful...");
-		} catch (NotADirectoryException e) {
-			// do nothing. 
+		} catch (NotADirectoryException e)
+		{
+			for(Object o :e.getStackTrace())ErrorLog.println(o);
 			e.printStackTrace();
 		}
 	}

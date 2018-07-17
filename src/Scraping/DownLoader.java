@@ -7,7 +7,10 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+import javax.swing.JProgressBar;
+
 import Gui.GuiModel;
+import Untilities.sys.ErrorLog;
 
 /**
  * This is a new added class, that will be passed as param to scrapables from the scraper, so that 
@@ -27,6 +30,7 @@ public class DownLoader
 	 public DownLoader(File directory_file)
 	{
 		assert directory_file!=null:"Something ridiculous has happended....";
+		
 		this.download_directory = directory_file;
 		
 		Thread t = new Thread
@@ -39,8 +43,10 @@ public class DownLoader
 								{
 									if(!DownLoader.this.waitingfordonwload.isEmpty())
 									{
+										GuiModel.getProgressBar().setIndeterminate(true);
 										DownLoader.println("----->Fetching a new Dowload mission...");
 										DownLoader.this.waitingfordonwload.poll().dumpTheFile();
+										GuiModel.getProgressBar().setIndeterminate(false);
 									}
 									
 									try 
@@ -49,6 +55,7 @@ public class DownLoader
 									} catch (InterruptedException e)
 									{
 										e.printStackTrace();
+										for(Object o :e.getStackTrace())ErrorLog.println(o);
 									}
 								}
 							}
@@ -138,6 +145,8 @@ public class DownLoader
 		 */
 		public boolean dumpTheFile()
 		{
+			
+			
 			try
 			{
 				InputStream inputstream = this.inputstr;
@@ -175,11 +184,17 @@ public class DownLoader
 			{
 				GuiModel.println(e);
 				e.printStackTrace();
+				for(Object o :e.getStackTrace())ErrorLog.println(o);
 			}
+			
 			return false; 
 		}
 		
+		
+		
 	}
+		
+
 	
 	
 	public static void println(Object o)
