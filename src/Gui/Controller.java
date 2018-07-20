@@ -54,6 +54,8 @@ class Controller implements  ActionListener
 			case "Continue":
 				stop();
 				break;
+			default: 
+				System.out.println(e.getActionCommand()+" is not implemented. " );
 		}
 	}
 	

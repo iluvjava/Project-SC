@@ -51,9 +51,15 @@ public class GuiModel
 	
 	/********************things for data part**********************/
 	File dir;
+	
 	String userlink;
+	
 	private Scrapable scr;
+	
+	private Thread runningsraper;
+	
 	private volatile Scraper scraper;
+	
 	int target=0;
 	
 	public GuiModel(View arg)
@@ -126,14 +132,6 @@ public class GuiModel
 		{
 			this.JTpane.setText(s);
 		}
-		
-		
-		
-//		private void clear()
-//		{
-//			this.G_JTpane.setText(null);
-//			
-//		}
 
 		
 	}
@@ -231,13 +229,8 @@ public class GuiModel
 				}
 				);
 		t.start();
-//		try {
-//			t.join();
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		this.G_GUI.getBtnStart().setEnabled(true);
+		this.runningsraper = t;
+
 	}
 	
 	
@@ -249,19 +242,25 @@ public class GuiModel
 	}
 
 
+	/**
+	 * Method runs when the stop button is called by the controller. 
+	 */
 	public synchronized void StopBottonPressed() 
 	{
-		switch(this.G_GUI.getBtnPause().getText())
-		{
-		case "Stop":
-			this.G_GUI.getBtnPause().setText("Continue");
-			Scraper.Pause=true;
-			break;
-		case "Continue":
-			this.G_GUI.getBtnPause().setText("Stop");
-			Scraper.Pause=false;
-			break;
-		}
+//		switch(this.G_GUI.getBtnPause().getText())
+//		{
+//		case "Stop":
+//			this.G_GUI.getBtnPause().setText("Continue");
+//			Scraper.Pause=true;
+//			break;
+//		case "Continue":
+//			this.G_GUI.getBtnPause().setText("Stop");
+//			Scraper.Pause=false;
+//			break;
+//		}
+		if(this.runningsraper==null)return;
+		this.runningsraper.interrupt();
+		this.G_GUI.getBtnStart().setEnabled(true);
 		
 	}
 	
