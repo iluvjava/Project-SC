@@ -483,12 +483,6 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 		
 	}
 
-	@Override
-	public boolean pauseAndSkip() {
-		return Scraper.Pause;
-		
-	}
-	
 	/**
 	 * 
 	 * @return

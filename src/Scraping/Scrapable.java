@@ -86,13 +86,6 @@ public interface Scrapable
 	public String getSourceContentUrl();
 	
 	
-	/**
-	 * This function will be called if the user wants to skip the craping process. 
-	 * You should put the following code:
-	 * return Scraper.Pause; 
-	 */
-	public boolean pauseAndSkip();
-	
 	
 	
 	/**

@@ -127,7 +127,7 @@ public class DeviantArtFavoriteOrGallery implements Scrapable
 				}
 				GuiModel.println("ThumbsLinks: "+allthumblinks.size());
 			}
-			while(this.driverAPI.scrollDown()&&!this.pauseAndSkip());
+			while(this.driverAPI.scrollDown());
 		}catch(Exception e)
 		{
 			e.printStackTrace();
@@ -140,13 +140,6 @@ public class DeviantArtFavoriteOrGallery implements Scrapable
 		System.out.println(allthumblinks);
 		GuiModel.println("Number of thumblinks: "+allthumblinks.size());
 		GuiModel.getProgressBar().setIndeterminate(false);
-		
-	}
-
-
-	@Override
-	public synchronized boolean pauseAndSkip() {
-		return Scraper.Pause;
 		
 	}
 

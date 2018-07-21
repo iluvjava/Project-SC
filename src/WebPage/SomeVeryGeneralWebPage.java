@@ -164,14 +164,6 @@ public class SomeVeryGeneralWebPage extends HtmlPage implements Scrapable {
 	
 	
 	@Override
-	public boolean pauseAndSkip() 
-	{
-		return Scraper.Pause;
-		
-	}
-
-
-	@Override
 	public void doTheScraping(DownLoader dl) 
 	{
 		for(String s : this.URLSInterestedIn)

@@ -36,7 +36,7 @@ public class Scraper
 	//protected ConcurrentLinkedQueue<Scrapable> waitingfordonwload;
 	private int webs_hasbeen_scraped=0;
 	
-	public static volatile boolean Pause = false; 
+	//public static volatile boolean Pause = false; 
 	
 	private int target;
 	
@@ -154,7 +154,6 @@ public class Scraper
 	 */
 	private void execute_Helper(Scrapable node)
 	{
-		if(Pause)return;
 		
 		if(this.webs_hasbeen_scraped>this.target)return;// base case; 
 		

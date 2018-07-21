@@ -268,7 +268,6 @@ public class GuiModel
 	 * Stream print enable means each new line will be appended to the textpanel<br>
 	 * disable means the old line will always be replaced by the new lines, significanly 
 	 * speed up the out put speed of the panel. 
-	 * 
 	 * @param b
 	 */
 	public static synchronized void  setStreamPrintMode(boolean b)
