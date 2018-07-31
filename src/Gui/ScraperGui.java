@@ -53,13 +53,19 @@ public class ScraperGui implements View{
 	private JSpinner spinner;
 	private JButton btnStart;
 	private JMenuItem mntmOpenFilechooser;
+	
+	//**************This is the controller of the Program***************
 	private Object G_mainListener;
+	
+	
 	private JPanel panel;
 	private FileChooserDialog G_Filechooserdialogwin;
 	private JScrollPane scrollPane;
 	private TextArea textArea;
 	private JButton btnStop;
 	private JProgressBar progressBar;
+	private JMenu mnNewMenu;
+	private JMenuItem mntmImportUrlFrom;
 
 	/**
 	 * Launch the application.
@@ -176,6 +182,16 @@ public class ScraperGui implements View{
 		mntmOpenFilechooser.setSelectedIcon(new ImageIcon(ScraperGui.class.getResource("/javax/swing/plaf/metal/icons/ocean/directory.gif")));
 		mnFile.add(mntmOpenFilechooser);
 		
+		mnNewMenu = new JMenu("Tools");
+		menuBar.add(mnNewMenu);
+		
+		mntmImportUrlFrom = new JMenuItem("Import URL From ClipBoard");
+		mnNewMenu.add(mntmImportUrlFrom);
+		
+		//***************************************************
+		// Action command. 
+		mntmImportUrlFrom.setActionCommand("ClipBoard Import");
+		
 		
 	}
 	
@@ -221,12 +237,13 @@ public class ScraperGui implements View{
 	}
 
 	@Override
-	public View addListener(Object l) 
+	public View addListener(final Object l) 
 	{
 		if(l instanceof ActionListener)
 		{
 			this.btnStart.addActionListener((ActionListener) l);
 			this.btnStop.addActionListener((ActionListener) l);
+			this.mntmImportUrlFrom.addActionListener((ActionListener) l);
 		}
 		
 		this.G_mainListener = l;
@@ -261,5 +278,8 @@ public class ScraperGui implements View{
 	
 	public JProgressBar getProgressBar() {
 		return progressBar;
+	}
+	public JMenuItem getMntmImportUrlFrom() {
+		return mntmImportUrlFrom;
 	}
 }

@@ -23,7 +23,7 @@ public class TestEverything {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+	//@Test
 	public void test() 
 	{
 		
@@ -66,6 +66,22 @@ public class TestEverything {
 	public static void println(Object o)
 	{
 		System.out.println(o);
+	}
+	
+	@Test
+	public void testTheEnterTextMethod()
+	{
+		WebDriverBridge driver = new WebDriverBridge();
+		driver.get("https://practiceit.cs.washington.edu/login");
+		while(true)
+		{
+			if(!driver.enterTextTo("victor1301166040@gmail.com","usernameoremail"))break;
+			if(!driver.enterTextTo("12345Lei","userpassword"))break;
+			WebElement e =driver.getElementById("submitbutton");
+			System.out.println(e);
+			e.submit();
+			break;
+		}
 	}
 	
 	

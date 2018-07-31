@@ -281,6 +281,24 @@ public class GuiModel
 	{
 		return loadingbar;
 	}
+
+
+	
+	/**
+	 * ---Cacually Tested---<brs>
+	 * The pass in content could be null. 
+	 * @param content
+	 */
+	public void importFromClipBoard(final String content) {
+		if(content ==null)
+		{
+			return;
+		}
+		System.out.println(content);
+		this.G_GUI.getTextField().setText(content);
+		
+		
+	}
 	
 
 }

@@ -54,12 +54,21 @@ class Controller implements  ActionListener
 			case "Continue":
 				stop();
 				break;
+			case "ClipBoard Import":
+				importFromClipBoard();
+				break;
 			default: 
 				System.out.println(e.getActionCommand()+" is not implemented. " );
 		}
 	}
 	
 
+	private void importFromClipBoard() 
+	{
+		final String content =Untilities.sys.ClipBoard.getClipBoard();
+		this.G_model.importFromClipBoard(content); 
+		
+	}
 	private void stop() {
 		this.G_model.StopBottonPressed();
 		

@@ -2,6 +2,7 @@ package Selenium;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -28,7 +29,7 @@ public class Lab
 	{
 		Selenium.Prepare.pre();
 		
-		WebDriver browser  = new FirefoxDriver();
+		WebDriver browser  = new ChromeDriver();
 		browser.get("https://rainbow-highway.deviantart.com/favourites/69983545/Featured");
 		JavascriptExecutor je = (JavascriptExecutor)browser;
 		int i = 0;

@@ -21,6 +21,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 public class WebDriverBridge
 {
+	
+	
+	
+	
 		private static WebDriver d;
 		
 		public WebDriverBridge()
@@ -243,6 +247,28 @@ public class WebDriverBridge
 		}
 		
 		
+		/**
+		 * ---Not Tested---<br>
+		 * This method should enter a text to a text field given the id of the element,
+		 *  and them it will submit the text. 
+		 * @return
+		 * false if operation unsuccessful. 
+		 */
+		public synchronized boolean enterTextTo(String text, String id)
+		{
+			try
+			{
+				WebElement we = this.getElementById(id);
+				we.sendKeys(text);
+				return true; 
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+			return false; 
+		}
+		
 		
 		
 		
@@ -251,6 +277,7 @@ public class WebDriverBridge
 
 enum TheDriver
 {
+	
 	SeleniumFirefox;
 	
 	WebDriver d;
