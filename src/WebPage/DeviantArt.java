@@ -291,8 +291,10 @@ public final class DeviantArt<T> extends HtmlPage implements Scrapable{
 	/**
 	 * Unit Tested
 	 * This is a method that will return a buffered out put stream that 
-	 * can be prepared for downloading the content; 
+	 * can be prepared for downloading the content; </b>
+	 * This method could potentially throw any type of exceptions. 
 	 * @Throw MalformedURLexception.
+	 * 
 	 */
 	public void doTheScraping(DownLoader dl) 
 	{

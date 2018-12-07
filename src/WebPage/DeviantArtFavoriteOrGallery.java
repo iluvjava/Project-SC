@@ -85,6 +85,7 @@ public class DeviantArtFavoriteOrGallery implements Scrapable
 			{
 				DeviantArt d = new DeviantArt(s);
 				d.doTheScraping(dl);
+				
 				Scrapable.G_alreadyVistedURL.add(s); // only add if there is not error detected. 
 			}
 			catch(Error ee)
