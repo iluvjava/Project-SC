@@ -13,7 +13,7 @@ import Gui.GuiModel;
 import Untilities.sys.ErrorLog;
 
 /**
- * This is a new added class, that will be passed as param to scrapables from the scraper, so that 
+ * This is a new added class, the instance of this class will be passed as a parameter to scrapables from the scraper, so that 
  *  the receiver; scrapble, know where to put all the files they have gotten from the internet. 
  * @author victo
  *

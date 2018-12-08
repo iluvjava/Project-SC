@@ -35,7 +35,7 @@ import Scraping.Scraper;
  * @author autistic lycan
  * @param <T>
  */
-public final class DeviantArt<T> extends HtmlPage implements Scrapable{
+public final class DeviantArt extends HtmlPage implements Scrapable{
 
 	private Collection<String> G_nextPages = new TreeSet<String>(); // A string representaion of all the pages that are on this page. 
 	
